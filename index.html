@@ -1,166 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WylieDev | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WylieDev — Modern Minimal Portfolio</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="WylieDev — modern, fast & responsive websites. Landing pages, portfolios and business sites. Payment via Payoneer." />
+  <meta name="author" content="WylieDev" />
+  <meta property="og:title" content="WylieDev — Modern Minimal Portfolio" />
+  <meta property="og:description" content="Clean, fast, responsive websites built with HTML, CSS and JavaScript." />
+  <meta property="og:url" content="https://dancing-cucurucho-c4fe6f.netlify.app/"/>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <a id="home" class="navbar" href="#">Home</a>
-            <a id="about" class="navbar" href="#">About</a>
-            <a id="services" class="navbar" href="#">Services</a>
-            <a id="portfolio" class="navbar" href="#">Portfolio</a>
-            <a class="navbar" href="#">Process</a>
-            <a class="navbar" href="#">FAQ</a>
-            <a id="contact" class="navbar" href="#">Contact</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home">WylieDev</a>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">Modern, Fast & Responsive <span class="accent">Websites</span></h1>
+          <p class="hero-sub">I build clean, mobile-first landing pages, portfolios and business sites — fast delivery, transparent pricing. Payment via Payoneer.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Get Started</a>
+            <a class="btn ghost" href="#portfolio">View Portfolio</a>
+          </div>
         </div>
-    </header>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>WylieDev —<span>Modern, Fast </span> & <span>Responsive Websites</span></h1>
-            <p>WylieDev — Self-taught frontend developer from Mongolia. I build clean, mobile-friendly landing pages, portfolios and business sites with fast delivery and fair pricing. Get your site live in days.</p>
-            <button>Get Started</button>
-            <button>View Portfolio</button>
-            <p>I create clean, mobile-friendly websites using HTML, CSS and JavaScript. Fast delivery, clear pricing, and a focus on performance and UX — ideal for startups, personal brands, and small businesses.</p>
+
+        <div class="hero-right">
+          <div class="device-mock">
+            <!-- minimal mockup box -->
+            <div class="mock-window">
+              <div class="mock-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-content">
+                <h3>Landing page</h3>
+                <p>Fast, conversion-focused design — delivered in 48 hours.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="about">
-        <div class="about-text">
-            <h1>About Me</h1>
-            <p>Hello! I'm WylieDev, a self-taught front-end developer based in Mongolia. I specialize in building clean, mobile-first websites that look great and perform well. I focus on simple, effective web solutions — landing pages, portfolios, and small business sites — delivered quickly with clear communication. I use HTML, CSS (including modern layout tools), and vanilla JavaScript. My goal: turn ideas into polished, conversion-focused websites.</p>
-        </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-lead">Hello! I'm <strong>WylieDev</strong>, a self-taught front-end developer from Mongolia. I specialize in minimal, performant websites built with HTML, CSS and JavaScript.</p>
+      </div>
     </section>
-    <section class="services">
-        <div class="services-text">
-            <div class="services-row">
-                <h1>Landing Page — $50</h1>
-                <p>1-page responsive design</p>
-                <p>Fast & clean layout, CTA optimized</p>
-                <p>Delivery within 48 hours</p>
-                <p>Includes basic SEO meta tags + contact form</p>
-            </div>
-            <div class="services-row">
-                <h1>Portfolio Website — $120</h1>
-                <p>3 pages (Home, About, Contact)</p>
-                <p>Project gallery + case study template</p>
-                <p>3-day delivery</p>
-                <p>GitHub/live demo + responsive design</p>
-            </div>
-            <div class="services-row">
-                <h1>Urgent Project — +30%</h1>
-                <p>Delivery in 24 hours</p>
-                <p>Priority workflow, daily updates</p>
-                <p>Great for launches or urgent fixes</p>
-            </div>
-            <div class="services-row">
-                <h1>Add-ons</h1>
-                <p>Domain setup & Netlify / Vercel deployment — $10</p>
-                <p>Content & image placement (up to 5 pages) — $30</p>
-                <p>Basic on-page SEO & Google Analytics setup — $20</p>
-            </div>
-            <button><a href="#">Order Now</a></button>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services & Pricing</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Landing Page — $50</h3>
+            <ul>
+              <li>1-page responsive design</li>
+              <li>CTA optimized</li>
+              <li>Delivery: 48 hours</li>
+              <li>Basic SEO + contact form</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Portfolio Website — $120</h3>
+            <ul>
+              <li>3 pages (Home, About, Contact)</li>
+              <li>Project gallery + case study</li>
+              <li>Delivery: ~3 days</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Urgent Project — +30%</h3>
+            <ul>
+              <li>Delivery in 24 hours</li>
+              <li>Priority updates</li>
+            </ul>
+          </article>
         </div>
+
+        <div class="mini-note">
+          <p><strong>Add-ons:</strong> Domain + deploy $10 • Content placement $30 • Basic SEO $20</p>
+        </div>
+      </div>
     </section>
-    <section class="pricing-microcopy">
-        <div>
-            <h1>Pricing microcopy (FAQ/clarify)</h1>
-            <p><strong>What’s included:</strong> design, responsive code, contact form, basic SEO tags, and deployment.</p>
-            <p><strong>Revisions:</strong> 2 rounds of minor revisions included.</p>
-            <p><strong>Payment:</strong> 50% upfront, 50% on delivery. PayPal / Wise / local bank / QPay accepted.</p>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="grid portfolio-grid">
+          <figure class="portfolio-item card">
+            <img src="screenshot1.png" alt="Landing Page example" loading="lazy" />
+            <figcaption>
+              <h4>Landing Page</h4>
+              <p>Conversion-focused single page for product launch.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item card">
+            <img src="screenshot2.png" alt="Portfolio example" loading="lazy" />
+            <figcaption>
+              <h4>Portfolio Site</h4>
+              <p>Three pages with project gallery and contact form.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item card">
+            <img src="screenshot3.png" alt="Business site example" loading="lazy" />
+            <figcaption>
+              <h4>Business Site</h4>
+              <p>Service list, pricing, contact CTA.</p>
+            </figcaption>
+          </figure>
         </div>
+      </div>
     </section>
-    <section class="portfolio">
-        <div>
-            <h1>Portfolio</h1>
-            <div class="portfolio-text">
-                <h2>Project 1 — Landing Page</h2>
-                <p>Fast single-page landing for product launch. </p>
-                <p>A focused, conversion-optimized landing page built to increase sign-ups for a SaaS product. Includes hero section, feature list, testimonial area, and email capture.</p>
-                <img src="screenshot1.png" alt="#">
-            </div>
-            <div class="portfolio-text">
-                <h2>Project 2 — Portfolio Design</h2>
-                <p>Personal portfolio for a designer.</p>
-                <p>Three-page portfolio with responsive grid, modal project views, and a contact form. Clean typography and image focus.</p>
-                <img src="screenshot2.png" alt="#">
-            </div>
-            <div class="portfolio-text">
-                <h2>Project 3 — Business Site</h2>
-                <p>Small business site with services & contact.</p>
-                <p>Multi-section business website featuring service descriptions, pricing table, and contact CTA for local businesses.</p>
-                <img src="screenshot3.png" alt="#">
-            </div>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <div class="container">
+        <h2 class="section-title">Work Process</h2>
+        <div class="grid steps">
+          <div class="step card">
+            <h4>1. Discuss</h4>
+            <p>Share goals, deadline & content. I’ll send a short quote.</p>
+          </div>
+          <div class="step card">
+            <h4>2. Design</h4>
+            <p>Quick mockup for approval.</p>
+          </div>
+          <div class="step card">
+            <h4>3. Build</h4>
+            <p>Code, test and share previews.</p>
+          </div>
+          <div class="step card">
+            <h4>4. Launch</h4>
+            <p>Final revisions, deploy & handover.</p>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="work-process">
-        <div class="work-process-text">
-            <h1>Work Process</h1>
-            <h3>1. Discuss</h3>
-            <p>Tell me your goals, deadline and content. I’ll send a short quote.</p>
-        </div>
-        <div class="work-process-text">
-            <h3>2. Design & Confirm</h3>
-            <p>I’ll create a quick design mockup or layout for your approval.</p>
-        </div>
-        <div class="work-process-text">
-            <h3>3. Build</h3>
-            <p>I code the design using HTML/CSS/JS. You’ll get periodic updates.</p>
-        </div>
-        <div class="work-process-text">
-            <h3>4. Review & Launch</h3>
-            <p>We review together, apply revisions, then I deploy the site and hand over files.</p>
-        </div>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <details class="faq-item">
+          <summary>How long does a project take?</summary>
+          <p>Landing pages: 48 hours. Portfolio: ~3 days. Urgent: 24 hours with extra fee.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What do you need from me?</summary>
+          <p>Text content, logo (if any), images (or I can use stock images), and a project brief.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Payment & Revisions</summary>
+          <p>50% upfront via Payoneer, 50% on delivery. Two rounds of minor revisions included.</p>
+        </details>
+      </div>
     </section>
-    <section class="faq">
-        <div>
-            <h1>FAQ</h1>
-            <div class="faq-text">
-                <h3>G: How long does a project take?</h3>
-                <h3>A: Landing pages: usually 48 hours. Portfolio: ~3 days. Urgent: 24 hours with extra fee.</h3>
-            </div>
-            <div class="faq-text">
-                <h3>G: What do you need from me?</h3>
-                <h3>A: Text content, logo (if any), images (or I can use royalty-free images), and a description of the goal.</h3>
-            </div>
-            <div class="faq-text">
-                <h3>G: Can you maintain my site later?</h3>
-                <h3>A: Yes — I offer hourly or monthly maintenance. Ask for details.</h3>
-            </div>
-            <div class="faq-text">
-                <h3>G: What if I don’t like the design?</h3>
-                <h3>A: Two rounds of minor revisions are included. Major reworks may have an extra charge.</h3>
-            </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-lead">Ready to start? Fill the form or email at <strong>wyliedev0@gmail.com</strong></p>
+
+        <!-- Netlify Form (works when deployed on Netlify) -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="contact-form">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="source" value="website" />
+          <p class="hidden"><label>Don’t fill this: <input name="bot-field" /></label></p>
+
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            <span>Project Type</span>
+            <select name="project" required>
+              <option>Landing Page</option>
+              <option>Portfolio</option>
+              <option>Business Site</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Message / Requirements</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Request</button>
+            <button class="btn ghost" type="button" id="payoneer-info">Payoneer Info</button>
+          </div>
+
+          <p class="form-note">I accept payments via <strong>Payoneer</strong>. I will send an invoice after order confirmation.</p>
+        </form>
+
+        <div id="form-success" class="form-success" hidden>
+          <p>Thanks — your message has been sent. I will reply within 24 hours.</p>
         </div>
+      </div>
     </section>
-    <section class="testimonials">
-        <div>
-            <h1>Testimonials</h1>
-            <div>
-                <h4>“Fast, reliable, and exactly what we needed. Highly recommended.” — Client A</h4>
-                <h4>“Great communication and a beautiful result — delivered on time.” — Client B</h4>
-            </div>
-        </div>
-    </section>
-    <section class="contact">
-        <div>
-            <div>
-                <h1>Contact Me</h1>
-                <p>Ready to start? Tell me about your project.</p>
-                <a href="https://github.com/WylieDev"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="https://www.instagram.com/moogii_the_goat/#"><ion-icon name="logo-instagram"></ion-icon>
-                <a href="https://www.facebook.com/monhtor.bno"><ion-icon name="logo-facebook"></ion-icon></a>
-                <ion-icon name="mail-unread-outline"></ion-icon>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <h1>© 2025 WylieDev — All rights reserved. | Terms & Privacy</h1>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2025 WylieDev — All rights reserved. | <a href="#terms">Terms</a> & <a href="#privacy">Privacy</a></small>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
