@@ -11,6 +11,8 @@
   <meta property="og:title" content="WylieDev — Modern Minimal Portfolio" />
   <meta property="og:description" content="Clean, fast, responsive websites built with HTML, CSS and JavaScript." />
   <meta property="og:url" content="https://dancing-cucurucho-c4fe6f.netlify.app/"/>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,7 +35,7 @@
       </nav>
 
       <div class="actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme"><ion-icon name="sunny-outline"></ion-icon></button>
         <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
       </div>
     </div>
@@ -193,55 +195,19 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <p class="section-lead">Ready to start? Fill the form or email at <strong>wyliedev0@gmail.com</strong></p>
+   <section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-lead">Let’s connect! You can reach me directly on:</p>
 
-        <!-- Netlify Form (works when deployed on Netlify) -->
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="source" value="website" />
-          <p class="hidden"><label>Don’t fill this: <input name="bot-field" /></label></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/monhtor.bno/" target="_blank" class="btn ghost">Facebook</a>
+      <a href="https://www.instagram.com/moogii_the_goat/" target="_blank" class="btn ghost">Instagram</a>
+      <a href="mailto:wyliedev0@gmail.com" class="btn primary">Send Email</a>
+    </div>
+  </div>
+</section>
 
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required />
-          </label>
-
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required />
-          </label>
-
-          <label>
-            <span>Project Type</span>
-            <select name="project" required>
-              <option>Landing Page</option>
-              <option>Portfolio</option>
-              <option>Business Site</option>
-              <option>Other</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Message / Requirements</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-
-          <div class="form-row">
-            <button class="btn primary" type="submit">Send Request</button>
-            <button class="btn ghost" type="button" id="payoneer-info">Payoneer Info</button>
-          </div>
-
-          <p class="form-note">I accept payments via <strong>Payoneer</strong>. I will send an invoice after order confirmation.</p>
-        </form>
-
-        <div id="form-success" class="form-success" hidden>
-          <p>Thanks — your message has been sent. I will reply within 24 hours.</p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
@@ -253,13 +219,5 @@
   <button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
 
   <script src="script.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCD1234"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7CRQ5ZXEDK');
-  </script>
 </body>
 </html>
-

@@ -165,3 +165,11 @@ body{
 /* subtle animations */
 section, .card, .portfolio-item, .mock-window{ will-change:transform,opacity; transform-origin:top center; transition: transform .6s cubic-bezier(.2,.9,.3,1), opacity .6s ease }
 .visible{ transform:none; opacity:1 !important }
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
