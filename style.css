@@ -1,0 +1,239 @@
+
+:root {
+  --bg: #0B0B0C;
+  --surface: #141416;
+  --text: #EDEDED;
+  --muted: #9A9A9A;
+  --primary: #A84DFF;
+  --secondary: #6F2DBD;
+  --cta1: #A84DFF;
+  --cta2: #FF66C4;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", "Inter", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--cta2);
+}
+
+
+header {
+  background: rgba(32, 32, 36, 0.247);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.navbar {
+  color: var(--text);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar:hover {
+  color: var(--cta2);
+}
+
+
+.hero {
+  padding: 120px 10%;
+  text-align: center;
+  background: radial-gradient(circle at top left, rgba(168,77,255,0.12), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(255,102,196,0.1), transparent 60%);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  background: linear-gradient(135deg, var(--cta1), var(--cta2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 1rem;
+}
+
+
+button {
+  background: linear-gradient(135deg, var(--cta1), var(--cta2));
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 15px rgba(168,77,255,0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(255,102,196,0.4);
+}
+
+button a {
+  color: #fff;
+}
+
+
+.about {
+  padding: 100px 10%;
+  background: var(--surface);
+}
+
+.about h1 {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--cta1), var(--cta2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.services {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.services-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.services-row {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.services-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168,77,255,0.2);
+}
+
+.services h1 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+
+.pricing-microcopy, .work-process, .faq, .testimonials {
+  padding: 80px 10%;
+}
+
+.work-process-text, .faq-text {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.portfolio {
+  padding: 100px 10%;
+  background: var(--surface);
+}
+
+.portfolio h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--cta1), var(--cta2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-text {
+  margin-bottom: 40px;
+}
+
+.portfolio-text img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(168,77,255,0.2);
+}
+
+
+.testimonials h4 {
+  color: var(--muted);
+  margin: 15px 0;
+}
+
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+  background: var(--surface);
+}
+
+.contact h1 {
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, var(--cta1), var(--cta2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact ion-icon {
+  font-size: 32px;
+  margin: 10px;
+  color: var(--primary);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact ion-icon:hover {
+  color: var(--cta2);
+  transform: scale(1.15);
+}
+
+footer {
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+}
